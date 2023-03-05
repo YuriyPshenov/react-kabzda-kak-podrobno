@@ -1,0 +1,36 @@
+.onOffContainer {
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.on {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.off {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.lamp {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
