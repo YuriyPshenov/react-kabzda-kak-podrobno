@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+
 export function UnControlledRating() {
 
     const [value, setValue] = useState(0)
@@ -23,9 +24,9 @@ type StarPropsType = {
 
 function Star(props: StarPropsType) {
     console.log('Star rendering')
-    if (props.selected) {
-        return <span onClick={() => props.callBack(props.id)}><b>Star </b></span>
-    } else {
-        return <span onClick={() => props.callBack(props.id)}>Star</span>
-    }
+
+    const returnComp1 = <span onClick={() => props.callBack(props.id)}><b>Star </b></span>
+    const returnComp2 = <span onClick={() => props.callBack(props.id)}>Star</span>
+
+    return props.selected ? returnComp1 : returnComp2
 }

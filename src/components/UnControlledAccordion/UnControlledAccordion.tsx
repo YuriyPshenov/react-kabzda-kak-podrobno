@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 
-
 export function UnControlledAccordion() {
 
     const[title, setTitle] = useState('UnControlledAccordion')

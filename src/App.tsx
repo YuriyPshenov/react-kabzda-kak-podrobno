@@ -35,20 +35,9 @@ function App() {
                 <h3>06 homeworks</h3>
                 <UnControlledRating/>
                 <UnControlledAccordion/>
+                <Accordion titleValue={'ControlledAccordion'} collapsed={true}/>
             </div>
         </div>
-    )
-}
-
-type PageTitlePropsType = {
-    title: string
-}
-
-function PageTitle(props: PageTitlePropsType) {
-    debugger
-    console.log('PageTitle rendering')
-    return (
-        <h1>{props.title}</h1>
     )
 }
 
