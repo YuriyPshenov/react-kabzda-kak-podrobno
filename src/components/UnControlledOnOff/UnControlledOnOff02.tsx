@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
 
-type OnOff02PropsType = {
-    on: boolean
-}
 
-const OnOff02 = (props: OnOff02PropsType) => {
+
+const UnControlledOnOff02 = () => {
     console.log('UnControlledOnOff rendered')
-    const [on, setOn] = useState(props.on)
+    const [on, setOn] = useState(false)
 
     const onOffContainer = {
         display: "flex"
@@ -41,11 +39,11 @@ const OnOff02 = (props: OnOff02PropsType) => {
 
     return (
         <div style={onOffContainer}>
-            <div style={onStyle} onClick={onClickHandler(true)}>On</div>
-            <div style={offStyle} onClick={onClickHandler(false)}>Off</div>
+            <div style={onStyle} onClick={() => onClickHandler(true)}>On</div>
+            <div style={offStyle} onClick={() => onClickHandler(false)}>Off</div>
             <div style={indicatorStyle}></div>
         </div>
     );
 };
 
-export default OnOff02;
+export default UnControlledOnOff02;
